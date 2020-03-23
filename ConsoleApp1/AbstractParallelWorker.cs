@@ -56,6 +56,8 @@ namespace ConsoleApp1
 
 		public virtual void Run(IEnumerable<T_in> dataCollection)
 		{
+			if(!initState) return;
+			
 			foreach (var item in dataCollection)
 			{
 				bufferBlock.Post(item);
