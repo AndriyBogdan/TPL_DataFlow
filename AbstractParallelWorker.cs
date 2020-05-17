@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks.Dataflow;
 
-namespace ConsoleApp1
+namespace GermesBot.Adapter.Parallel
 {
 	public abstract class AbstractParallelWorker<T_in, T_out>
 	{

@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp1
+namespace GermesBot.Adapter.Parallel
 {
 	public sealed class ParallelWorker : AbstractParallelWorker<IParallelData, IParallelData>
 	{
 		public ParallelWorker() : base()
 		{
 			
-
 		}
 		public ParallelWorker(Func<IParallelData, IParallelData> TransformMethod, Action<IParallelData> ActionMethod) : base(TransformMethod, ActionMethod)
 		{
